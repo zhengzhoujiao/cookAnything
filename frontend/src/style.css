@@ -1,0 +1,133 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    background: #f0fdf4;
+    min-height: 100vh;
+    /* 移动端优化 */
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+/* 页面顶部轻量留白（用于无顶部导航场景） */
+.page-top-gap {
+    padding-top: calc(0.5rem + env(safe-area-inset-top, 0px));
+}
+
+/* 移动端输入框字体防放大（iOS Safari < 16px 自动放大） */
+input, textarea, select {
+    font-size: max(16px, 1em);
+}
+
+/* 移动端按钮触摸优化 */
+button, a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+/* iOS 安全区域支持（刘海/小横条）*/
+@supports (padding-top: env(safe-area-inset-top)) {
+    .safe-top {
+        padding-top: env(safe-area-inset-top);
+        height: calc(3.5rem + env(safe-area-inset-top)); /* 3.5rem is h-14 */
+    }
+}
+
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .mobile-tab-bar-safe {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+/* 自定义动画 */
+@keyframes cooking {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-5px) rotate(2deg);
+    }
+
+    50% {
+        transform: translateY(-3px) rotate(-1deg);
+    }
+
+    75% {
+        transform: translateY(-7px) rotate(1deg);
+    }
+}
+
+@keyframes fire {
+
+    0%,
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    50% {
+        transform: scaleY(1.1) scaleX(0.95);
+    }
+}
+
+@keyframes steam {
+    0% {
+        opacity: 0.7;
+        transform: translateY(0px) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px) scale(1.2);
+    }
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+    }
+}
+
+.cooking-animation {
+    animation: cooking 2s ease-in-out infinite;
+}
+
+.fire-animation {
+    animation: fire 1.5s ease-in-out infinite;
+}
+
+.steam-animation {
+    animation: steam 2s ease-out infinite;
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* 文本截断工具类 */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

@@ -1,0 +1,26 @@
+# Private runtime configuration; only public examples/defaults are distributed.
+.env
+.env.*
+!.env.example
+!frontend/.env.production
+*.private.*
+project.private.config.json
+node_modules/
+dist/
+build/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.release/
+.audit-private/
+*.bundle
+*.bak
+*.log
+.DS_Store
+.idea/
+.vscode/
+.kiro/

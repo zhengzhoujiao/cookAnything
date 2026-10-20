@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">灵机一灶</title>
+  <desc id="desc">把现有食材，变成今天的拿手菜。简笔卡通厨师搭配食材和菜谱。</desc>
+  <rect width="1200" height="480" rx="28" fill="#f1faf5"/>
+  <g id="title-block" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+    <text x="58" y="70" fill="#168262" font-size="22" letter-spacing="3">ELECTRONIC RECIPE</text>
+    <text x="54" y="150" fill="#193b32" font-size="62" font-weight="700">灵机一灶</text>
+    <text x="58" y="216" fill="#193b32" font-size="34" font-weight="600">把现有食材，</text>
+    <text x="58" y="264" fill="#193b32" font-size="34" font-weight="600">变成今天的拿手菜。</text>
+    <path d="M58 294H142" stroke="#ec9566" stroke-width="6" stroke-linecap="round"/>
+    <text x="58" y="342" fill="#487165" font-size="23">选食材 · 找灵感 · 配一桌</text>
+    <text x="58" y="414" fill="#487165" font-size="20">从「今天吃什么」到「这一餐怎么做」</text>
+  </g>
+  <g id="generated-cooking-scene">
+    <image x="620" y="28" width="550" height="424" preserveAspectRatio="xMidYMid meet" xlink:href="hero-subject.png"/>
+  </g>
+</svg>

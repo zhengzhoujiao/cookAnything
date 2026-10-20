@@ -1,0 +1,8 @@
+{
+  "status": "pending-upstream-authorization",
+  "upstream": "https://github.com/liu-ziting/what-to-eat",
+  "upstream_reuse_confirmed_by_maintainer": true,
+  "upstream_version": null,
+  "license_evidence": null,
+  "public_release_ready": false
+}
